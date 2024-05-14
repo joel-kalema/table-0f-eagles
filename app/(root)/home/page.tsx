@@ -9,7 +9,7 @@ const prompt = Prompt({
 
 export default function HomePage() {
   return (
-    <div className="flex justify-center items-center px-32">
+    <div className="flex justify-center items-center px-32 home">
         <div>
             <div className="mt-[10rem] text-center">
                 <h1 className={`${prompt.className} text-6xl font-extrabold`}>TABLE OF EAGLES</h1>

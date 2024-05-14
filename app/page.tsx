@@ -4,7 +4,7 @@ import Nav from "@/components/Navbar/navbar";
 
 export default function Home() {
   return (
-    <main className="home">
+    <main className="">
       <Nav />
       <HomePage />
     </main>

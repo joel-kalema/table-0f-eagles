@@ -1,8 +1,8 @@
 export default function Nav() {
   return (
-    <div className="py-6 px-10 flex justify-between items-center">
-      <div className="w-1/6 p-6">
-        <img src="/logo.png" alt="" />
+    <div className="py-4 px-20 flex justify-between items-center fixed top-0 left-0 w-full">
+      <div className="w-1/6">
+        <img src="/logo.png" alt="" className="w-5/6"/>
       </div>
 
       <div className="w-4/6 flex justify-between items-center">
