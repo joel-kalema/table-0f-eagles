@@ -1,5 +1,8 @@
+"use client"
+
+import { useState } from "react";
 import { Prompt } from "next/font/google";
-// import TextAbout from "./_componets/text";
+import Image from "next/image";
 
 
 const prompt = Prompt({
@@ -8,9 +11,25 @@ const prompt = Prompt({
 })
 
 export default function Speakers() {
+  const [isLoading, setLoading] = useState(true);
   return (
-    <div className="flex justify-center items-center px-32">
-      
+    <div className="px-32 h-[100vh]">
+      <h1 className={`${prompt.className} text-3xl`}>SPEAKERS</h1>
+      <div>
+        <div>
+          <div className="hidden lg:block sm:block md:w-4/5 md:mx-auto lg:w-2/5 overflow-hidden drop-shadow-xl">
+            <Image src="/speaker01.jpeg" alt="about" loading="lazy" layout="responsive" width={500} height={500} quality={80}
+              className={`
+                    duration-700 ease-in-out group-hover:opacity-75
+                    ${isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+                })`}
+              onLoadingComplete={() => setLoading(false)}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
