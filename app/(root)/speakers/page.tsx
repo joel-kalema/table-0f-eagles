@@ -31,7 +31,7 @@ export default function Speakers() {
             />
           </div>
 
-          <div className="w-4/6 my-[10rem] flex">
+          <div className="my-[10rem] flex justify-between">
             <div className="md:w-4/5 lg:w-2/5 overflow-hidden drop-shadow-xl my-10">
               <Image src="/speaker01.jpeg" alt="about" loading="lazy" layout="responsive" width={500} height={500} quality={80}
                 className={`
@@ -42,6 +42,7 @@ export default function Speakers() {
                   })`}
                 onLoadingComplete={() => setLoading(false)}
               />
+              <p>Pastor Eddie James</p>
             </div>
 
             <div className="md:w-4/5 lg:w-2/5 overflow-hidden drop-shadow-xl">
@@ -54,6 +55,7 @@ export default function Speakers() {
                   })`}
                 onLoadingComplete={() => setLoading(false)}
               />
+              <p>Pastor Kofi Dartey</p>
             </div>
 
           </div>
