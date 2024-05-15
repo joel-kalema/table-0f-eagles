@@ -29,10 +29,10 @@ export default function Location() {
 
                 </div>
                 <div className="w-1/2 ml-[-10rem] pr-20">
-                    <p>Join us at the Table Of Eagles, where the Bride of Christ is prepared, the prophetic is released, and the supernatural becomes natural. Together, let us soar to new heights in our walk with the Lord.</p>
-                    <h2>Doubletree by Hilton DFW Airport North</h2>
-                    <p>4441 W. John Carpenter Freeway, Irving, TX 75063</p>
-                    <p>Phone: (972) 929-8181</p>
+                    <p className="text-sm mb-10">Join us at the Table Of Eagles, where the Bride of Christ is prepared, the prophetic is released, and the supernatural becomes natural. Together, let us soar to new heights in our walk with the Lord.</p>
+                    <h2 className="font-extrabold mb-6">Doubletree by Hilton DFW Airport North</h2>
+                    <p className="text-[#d3b975]">4441 W. John Carpenter Freeway, Irving, TX 75063</p>
+                    <p className="text-[#d3b975]">Phone: (972) 929-8181</p>
                 </div>
             </div>
         </div>
