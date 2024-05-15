@@ -1,5 +1,6 @@
 import { Prompt } from "next/font/google";
 import TextAbout from "./_componets/text";
+import Timer from "@/components/count/timer"
 
 
 const prompt = Prompt({
@@ -14,6 +15,7 @@ export default function HomePage() {
             <div className="mt-[10rem] text-center">
                 <h1 className={`${prompt.className} text-6xl font-extrabold`}>TABLE OF EAGLES</h1>
                 <h2 className="mt-6 ">Nov 29 - Dec 01</h2>
+                <Timer />
             </div>
 
             <TextAbout />
