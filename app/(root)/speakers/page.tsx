@@ -19,7 +19,7 @@ export default function Speakers() {
 
         <div className="mt-20 px-20">
 
-          <div className="md:w-4/5 lg:w-3/5 overflow-hidden drop-shadow-xl my-10">
+          <div className="md:w-4/5 lg:w-3/6 overflow-hidden drop-shadow-xl my-10">
             <Image src="/beleke.jpeg" alt="beleke" loading="lazy" layout="responsive" width={500} height={500} quality={80}
               className={`
                     duration-700 ease-in-out group-hover:opacity-75
