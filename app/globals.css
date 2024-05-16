@@ -4,41 +4,41 @@
 
 
 body {
- background-color: #22211f;
- color: #9b9a96;
+	background-color: #22211f;
+	color: #9b9a96;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 .home {
-  width: 100%;
-  height: 200dvh;
-  background-image: linear-gradient(to top, #22211f, #22211fc7), url("/home.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	width: 100%;
+	height: 200dvh;
+	background-image: linear-gradient(to top, #22211f, #22211fc7), url("/home.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 @property --angle {
-  syntax: '<angle>';
-  initial-value: 90deg;
-  inherits: true;
+	syntax: '<angle>';
+	initial-value: 90deg;
+	inherits: true;
 }
 
 @property --gradX {
-  syntax: '<percentage>';
-  initial-value: 50%;
-  inherits: true;
+	syntax: '<percentage>';
+	initial-value: 50%;
+	inherits: true;
 }
 
 @property --gradY {
-  syntax: '<percentage>';
-  initial-value: 0%;
-  inherits: true;
+	syntax: '<percentage>';
+	initial-value: 0%;
+	inherits: true;
 }
 
 p {
@@ -72,20 +72,25 @@ p {
 		--gradX: 100%;
 		--gradY: 50%;
 	}
+
 	40% {
 		--gradX: 100%;
 		--gradY: 100%;
 	}
+
 	60% {
 		--gradX: 50%;
 		--gradY: 100%;
 	}
+
 	80% {
 		--gradX: 0%;
 		--gradY: 50%;
 	}
+
 	100% {
 		--gradX: 50%;
 		--gradY: 0%;
 	}
 }
+
