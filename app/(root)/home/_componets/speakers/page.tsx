@@ -44,8 +44,10 @@ export default function Speakers() {
 
   const triggerRef = useRef(null);
   const sectionRef = useRef(null);
+  const elements = useRef(null)
 
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
     const pin = gsap.fromTo(sectionRef.current, {
       translateX: 0
@@ -56,27 +58,26 @@ export default function Speakers() {
       scrollTrigger: {
         trigger: triggerRef.current,
         start: "top top",
-        end: "300 top",
+        end: "3000 top",
         scrub: 0.6,
-        pin: true
+        pin: true,
       }
-    })
+    });
     return () => {
-      pin.kill()
-    }
-
+      pin.kill();
+    };
   }, []);
 
   return (
-    <div className="w-4/6 mx-auto mb-[12rem]">
-      <h1 className={`${prompt.className} text-6xl`}>SPEAKERS</h1>
+    <div className="w-4/6 mx-auto mb-[12rem] pt-20">
+      <h1 className={`${prompt.className} text-6xl mb-10`}>SPEAKERS</h1>
       <div className="border-dashed border-[1px] border-[#9b9a96] overflow-hidden">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="pl-20 pt-20 w-[400vw] h-[100vh] flex justify-between items-center flex-row relative">
             {
               speakers.map((item, index) => (
-                <div className="flex items-center w-1/4">
-                  <div key={index} className="w-2/5 overflow-hidden">
+                <div ref={elements} key={index} className="flex items-center w-1/4">
+                  <div className="w-2/5 relative">
                     <Image src={item.url} alt="beleke" loading="lazy" layout="responsive" width={500} height={500} quality={80}
                       className={`
                     duration-700 ease-in-out group-hover:opacity-75
@@ -86,6 +87,7 @@ export default function Speakers() {
                         })`}
                       onLoadingComplete={() => setLoading(false)}
                     />
+                    <p className="absolute bottom-2 right-[-2rem] text-9xl mix-blend-difference border border-[#fff]">{index+1}</p>
                   </div>
                   <div className="w-3/6">
                     <h2>Pastor</h2>

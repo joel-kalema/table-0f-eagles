@@ -11,7 +11,7 @@ export default function TextAbout() {
         if (text.current) {
             gsap.from(text.current.children, {
                 opacity: 0,
-                x: -200,
+                x: -100,
                 duration: 2,
                 scrollTrigger: {
                     trigger: text.current,

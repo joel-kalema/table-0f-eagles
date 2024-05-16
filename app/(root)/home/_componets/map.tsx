@@ -14,7 +14,7 @@ export default function Location() {
     const [isLoading, setLoading] = useState(true);
     return (
         <div className="my-[20rem]">
-            <h1 className={`${prompt.className} font-extrabold text-4xl mb-10 text-center`}>Location</h1>
+            <h1 className={`${prompt.className} text-6xl mb-10 text-center`}>Location</h1>
             <div className="flex items-center">
                 <div className="md:w-4/6 lg:w-4/6 overflow-hidden drop-shadow-xl">
                     <Image src="/mapusa.png" alt="about" loading="lazy" layout="responsive" width={500} height={500} quality={80}
