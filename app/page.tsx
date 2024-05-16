@@ -5,6 +5,7 @@ import Nav from "@/components/Navbar/navbar";
 import HomePage from "./(root)/home/page";
 import Speakers from "./(root)/home/_componets/speakers/page";
 import Location from "./(root)/home/_componets/map";
+import VideoPresention from "./(root)/home/_componets/video";
 
 export default function Home() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function Home() {
     <main className="">
       <Nav />
       <HomePage />
+      <VideoPresention />
       <Speakers />
       <Location />
     </main>

@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/home/home.jsx", "app/(root)/home/page.js", "app/(root)/home/page.jsx", "app/(root)/home/_componets/text.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/home/home.jsx", "app/(root)/home/page.js", "app/(root)/home/page.jsx", "app/(root)/home/_componets/text.jsx", "app/(root)/home/_componets/video.jsx"],
   "exclude": ["node_modules"]
 }

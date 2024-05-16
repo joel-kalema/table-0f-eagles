@@ -25,7 +25,7 @@ export default function HomePage() {
       tl.from(menuItemRef.current.children, {
         y: 40,
         opacity: 0,
-        duration: 2,
+        duration: 1,
         delay: 0.5,
         stagger: {
           amount: 0.7,
