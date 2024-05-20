@@ -5,6 +5,7 @@ import Nav from "@/components/Navbar/navbar";
 import HomePage from "./(root)/home/page";
 import Speakers from "./(root)/home/_componets/speakers/page";
 import Location from "./(root)/home/_componets/map";
+import People from "./(root)/home/_componets/logo";
 import VideoPresention from "./(root)/home/_componets/video";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <VideoPresention />
       <Speakers />
       <Location />
+      <People />
     </main>
   );
 }
