@@ -27,7 +27,7 @@ export default function Location() {
                     />
 
                 </div>
-                <div className="w-1/2 ml-[-14rem] pr-20 text-[1.1rem]">
+                <div data-scroll data-scroll-speed='0.6' className="w-1/2 ml-[-14rem] pr-20 text-[1.1rem]">
                     <h1 className={`${prompt.className} text-6xl mb-10`}>Location</h1>
                     <p className=" mb-10">Join us at the Table Of Eagles, where the Bride of Christ is prepared, the prophetic is released, and the supernatural becomes natural. Together, let us soar to new heights in our walk with the Lord.</p>
                     <h2 className="font-extrabold mb-6">Doubletree by Hilton DFW Airport North</h2>

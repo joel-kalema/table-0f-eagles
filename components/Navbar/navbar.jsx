@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Link from "next/link"; 
 
 export default function Nav() {
   const [fix, setFix] = useState(false)
@@ -29,9 +30,9 @@ export default function Nav() {
           <li>FAQS</li>
           <li>FASTING AND PRAYING</li>
         </ul>
-        <div className="box">
+        <Link href="" className="box">
           <p>REGISTER NOW</p>
-        </div>
+        </Link>
       </div>
     </div>
   );
