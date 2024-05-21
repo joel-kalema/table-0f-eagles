@@ -60,10 +60,10 @@ export default function VideoPresentation() {
                     </video>
                 </div>
                 <div className={`${time.className} lg:w-4/6 lg:text-start text-center text-3xl overflow-hidden`} ref={details}>
-                <div className="w-[6rem] h-[3px] bg-[#d3b975] mb-10"></div>
-                    <p>The Table Of Eagles is a place where the prophetic anointing flows freely.</p>
-                    <p>Through powerful messages and fervent intercession, we seek to instruct,</p>
-                    <p>Together, we stand as watchmen, interceding for the church, our cities, and our nations.</p>
+                <div className="w-[6rem] h-[3px] bg-[#d3b975] mb-10 uppercase"></div>
+                    <p className="uppercase">The Table Of Eagles is a place where the prophetic anointing flows freely.</p>
+                    <p className="uppercase">Through powerful messages and fervent intercession, we seek to instruct,</p>
+                    <p className="uppercase">Together, we stand as watchmen, interceding for the church, our cities, and our nations.</p>
                 </div>
             </div>
         </div>
