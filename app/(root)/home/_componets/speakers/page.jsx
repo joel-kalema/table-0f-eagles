@@ -62,9 +62,14 @@ export default function Speakers() {
   const sectionRef = useRef(null);
   const elements = useRef([]);
   const textRefs = useRef([]);
+  const numberRefs = useRef([]);
 
   if (textRefs.current.length !== speakers.length) {
     textRefs.current = Array(speakers.length).fill().map((_, i) => textRefs.current[i] || createRef());
+  }
+
+  if (numberRefs.current.length !== speakers.length) {
+    numberRefs.current = Array(speakers.length).fill().map((_, i) => numberRefs.current[i] || createRef());
   }
 
   useGSAP(() => {
@@ -99,6 +104,20 @@ export default function Speakers() {
       });
     });
 
+    numberRefs.current.forEach((number, index) => {
+      gsap.from(number.current, {
+        x: -100,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: number.current,
+          start: "left center",
+          end: "center center",
+          containerAnimation: pin,
+          scrub: true,
+        }
+      });
+    });
+
     return () => {
       pin.kill();
     };
@@ -109,7 +128,7 @@ export default function Speakers() {
       <h1 className={`${prompt.className} text-6xl mb-10`}>SPEAKERS</h1>
       <div className="border-dashed border-[1px] border-[#9b9a96] overflow-hidden">
         <div ref={triggerRef}>
-          <div ref={sectionRef} className="pl-20 pt-20 w-[370vw] h-[100vh] flex justify-between items-center flex-row relative">
+          <div ref={sectionRef} className="pl-20 pt-20 w-[360vw] h-[100vh] flex justify-between items-center flex-row relative">
             {speakers.map((item, index) => (
               <div ref={(el) => (elements.current[index] = el)} key={index} className="w-1/6">
                 <div className="w-3/5 relative z-20">
@@ -122,7 +141,7 @@ export default function Speakers() {
                       }`}
                     onLoadingComplete={() => setLoading(false)}
                   />
-                  <p className="absolute bottom-2 right-[-2rem] text-9xl mix-blend-difference border border-[#fff]">{index + 1}</p>
+                  <p ref={numberRefs.current[index]} className="absolute bottom-2 right-[-2rem] text-9xl mix-blend-difference border border-[#fff]">{index + 1}</p>
                 </div>
                 <div ref={textRefs.current[index]} className="w-4/6 z-20 mt-4">
                   <h2 className="text-2xl font-extrabold">{item.title}</h2>
