@@ -22,8 +22,8 @@ export default function TentativeSchedule() {
     return (
         <main className="">
             <Nav />
-            <div className="w-4/5 mx-auto pt-[20rem]">
-                <h1>Tentative Schedule</h1>
+            <div className="w-4/5 mx-auto pt-[15rem]">
+                <h1 className={`${title.className} uppercase text-6xl`}>Tentative Schedule</h1>
                 <div>
                     <h2>Friday:</h2>
                     <p>5:00pm-6:00pm (Opening prayer & Worship VO1)</p>
