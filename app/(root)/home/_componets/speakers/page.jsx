@@ -1,12 +1,11 @@
 "use client"
 
-import { useState, useEffect, useRef, createRef } from "react";
+import { useState, useRef, createRef } from "react";
 import { Prompt, Syncopate } from "next/font/google";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { title } from "process";
 
 const prompt = Prompt({
   subsets: ['latin', 'latin-ext', 'thai', 'vietnamese'],
@@ -124,7 +123,7 @@ export default function Speakers() {
   }, []);
 
   return (
-    <div className="w-4/6 mx-auto mb-[12rem] pt-20">
+    <div className="w-4/6 mx-auto mb-[12rem] pt-20" id="speaker">
       <h1 className={`${prompt.className} text-6xl mb-10`}>SPEAKERS</h1>
       <div className="border-dashed border-[1px] border-[#9b9a96] overflow-hidden">
         <div ref={triggerRef}>

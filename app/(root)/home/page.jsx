@@ -34,9 +34,9 @@ export default function HomePage() {
   });
 
   return (
-    <div className="flex justify-center items-center px-32 home">
-      <div>
-        <div ref={menuItemRef} className="mt-[10rem] text-center">
+    <div className="flex justify-center items-center px-32 home" id="home">
+      <div className="pb-[20rem]">
+        <div ref={menuItemRef} className="mt-[15rem] text-center">
           <h1 data-scroll data-scroll-speed='0.7' className={`${title.className} font-bold text-8xl mb-4`}>TABLE OF EAGLES</h1>
           <h2 data-scroll data-scroll-speed='0.5' className={`${subTitle.className} mt-6 text-[#d3b975] text-4xl`}>Nov 29 - Dec 01</h2>
           <Timer />

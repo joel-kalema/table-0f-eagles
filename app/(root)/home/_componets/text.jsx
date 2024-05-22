@@ -36,8 +36,8 @@ export default function TextAbout() {
     }, []);
 
     return (
-        <div>
-            <div className="w-4/6 float-right overflow-hidden mt-[20rem] relative text-[1.1rem] mr-20" ref={text}>
+        <div id="about">
+            <div className="w-4/6 float-right overflow-hidden mt-[10rem] relative text-[1.1rem] mr-20" ref={text}>
                 <h1 className={`${time.className} font-extrabold text-3xl mb-10 text-[#d3b975]`}>Welcome to the Table Of Eagles</h1>
                 <p><span className="text-[#d3b975] font-extrabold">TABLE OF EAGLES</span> is a conference carrying a vision of the Preparation of the Bride of Christ for the soon return of our Lord Jesus (The Rapture). It seeks to build a Prophetic Nation of believers through a conference once every year focusing on:</p>
                 <ul className="list-disc ml-6 mt-4">

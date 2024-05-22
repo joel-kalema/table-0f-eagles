@@ -116,3 +116,26 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+.a, .nav {
+	display: inline-block;
+	transform: .6s ease;
+	transition: 1s;
+  }
+  
+  .a:after, .nav:after {
+	display: block;
+	content: '';
+	width: inherit;
+	border-bottom: solid 1px #d3b975;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+  }
+  
+  .a:hover:after {
+	transform: scaleX(1);
+  }
+  
+  .nav:after {
+	transform: scaleX(1);
+  }

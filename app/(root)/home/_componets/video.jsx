@@ -52,7 +52,7 @@ export default function VideoPresentation() {
 
     return (
         <div className="overflow-hidden">
-            <div ref={video} className='flex flex-col-reverse items-center overflow-hidden lg:flex-row px-6 md:px-20 lg:px-32 justify-around py-28'>
+            <div ref={video} className='flex flex-col-reverse items-center overflow-hidden lg:flex-row px-6 md:px-20 lg:px-32 justify-around pb-28'>
                 <div ref={details} className='w-6/6 lg:w-4/12 lg:ml-12 overflow-hidden lg:px-12 mx-auto mb-10 lg:mb-0'>
                     <video className="h-full w-full rounded-lg" controls>
                         <source src="/event.mp4" type="video/mp4" />
