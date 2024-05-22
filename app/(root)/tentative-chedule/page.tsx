@@ -12,7 +12,7 @@ const title = Prompt({
   
   const subTitle = Syncopate({
     subsets: ['latin'],
-    weight: '700'
+    weight: '400'
   })
 
 
@@ -25,7 +25,7 @@ export default function TentativeSchedule() {
             <div className="w-4/5 mx-auto pt-[15rem]">
                 <h1 className={`${title.className} uppercase text-6xl`}>Tentative Schedule</h1>
                 <div>
-                    <h2>Friday:</h2>
+                    <h2 className={`${subTitle.className} uppercase text-6xl`}>Friday:</h2>
                     <p>5:00pm-6:00pm (Opening prayer & Worship VO1)</p>
                     <p>6:00pm-7:30pm (Apostle Enmith)</p>
                     <p>7:30pm-8:00pm (Worship with TFC choir)</p>
