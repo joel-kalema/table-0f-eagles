@@ -1,10 +1,10 @@
 "use client"
 
-import { gsap } from "gsap";
 import TextAbout from "./_componets/text";
 import Timer from "@/components/count/timer";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import { gsap } from "gsap";
 
 import { Prompt, Syncopate } from "next/font/google";
 
