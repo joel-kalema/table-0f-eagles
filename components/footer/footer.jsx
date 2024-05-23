@@ -8,7 +8,7 @@ export default function Footer() {
                 <p className="mr-2">CONTACT US:</p>
                 <Link href="mailto:Tableofeagles01@gmail.com">Tableofeagles01@gmail.com</Link>
             </div>
-            <p className="text-xs">© 2023 Christopher Beleke Tabu, All right reserved</p>
+            <p className="text-xs">© All right reserved</p>
         </div>
     );
 }

@@ -62,7 +62,6 @@ p {
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
-	transition: 1s ease all;
 }
 
 .box:hover {
