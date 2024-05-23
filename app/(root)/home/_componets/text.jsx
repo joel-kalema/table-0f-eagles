@@ -25,9 +25,9 @@ export default function TextAbout() {
           });
           
           tl.from(text.current.children, {
-            x: -200,
+            x: 250,
             opacity: 0,
-            duration: 1.5,
+            duration: 2,
             delay: 0.5,
             stagger: {
               amount: 0.7,
@@ -36,9 +36,9 @@ export default function TextAbout() {
     }, []);
 
     return (
-        <div>
-            <div className="w-4/6 float-right overflow-hidden mt-[20rem] relative text-[1.1rem] mr-20" ref={text}>
-                <h1 className={`${time.className} font-extrabold text-3xl mb-10 text-[#d3b975]`}>Welcome to the Table Of Eagles</h1>
+        <div id="about" className="h-[100vh] flex justify-center items-center">
+            <div className="w-5/6 mx-auto overflow-hidden mt-[10rem] relative text-xl" ref={text}>
+                <h1 className={`${time.className} font-extrabold text-5xl mb-10 uppercase text-[#d3b975]`}>Welcome to the Table Of Eagles</h1>
                 <p><span className="text-[#d3b975] font-extrabold">TABLE OF EAGLES</span> is a conference carrying a vision of the Preparation of the Bride of Christ for the soon return of our Lord Jesus (The Rapture). It seeks to build a Prophetic Nation of believers through a conference once every year focusing on:</p>
                 <ul className="list-disc ml-6 mt-4">
                     <li>Encounters with Jesus</li>

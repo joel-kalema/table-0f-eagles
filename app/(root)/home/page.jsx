@@ -1,10 +1,10 @@
 "use client"
 
-import { gsap } from "gsap";
 import TextAbout from "./_componets/text";
 import Timer from "@/components/count/timer";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import { gsap } from "gsap";
 
 import { Prompt, Syncopate } from "next/font/google";
 
@@ -34,7 +34,7 @@ export default function HomePage() {
   });
 
   return (
-    <div className="flex justify-center items-center px-32 home">
+    <div className="flex justify-center items-center px-32 home" id="home">
       <div>
         <div ref={menuItemRef} className="mt-[10rem] text-center">
           <h1 data-scroll data-scroll-speed='0.7' className={`${title.className} font-bold text-8xl mb-4`}>TABLE OF EAGLES</h1>

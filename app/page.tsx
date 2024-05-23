@@ -7,6 +7,7 @@ import Speakers from "./(root)/home/_componets/speakers/page";
 import Location from "./(root)/home/_componets/map";
 import People from "./(root)/home/_componets/logo";
 import VideoPresention from "./(root)/home/_componets/video";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   useEffect(() => {
@@ -30,6 +31,7 @@ export default function Home() {
       <Speakers />
       <Location />
       <People />
+      <Footer />
     </main>
   );
 }
