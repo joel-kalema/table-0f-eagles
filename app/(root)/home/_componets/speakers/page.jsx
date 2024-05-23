@@ -79,7 +79,7 @@ export default function Speakers() {
     }, {
       translateX: "-300vw",
       ease: "none",
-      duration: 2,
+      duration: 1,
       scrollTrigger: {
         trigger: triggerRef.current,
         start: "top top",
@@ -133,7 +133,7 @@ export default function Speakers() {
                 <div className="w-3/5 relative z-20">
                   <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
                     className={`
-                      duration-700 ease-in-out group-hover:opacity-75
+                      duration-200 ease-in-out group-hover:opacity-75
                       ${isLoading
                         ? "scale-110 blur-2xl grayscale"
                         : "scale-100 blur-0 grayscale-0"
