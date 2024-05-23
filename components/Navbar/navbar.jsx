@@ -23,7 +23,7 @@ export default function Nav() {
       </div>
 
       <div className="w-3/6 flex justify-between items-center">
-        <div className="flex w-4/6 justify-between">
+        <div className="flex w-4/6 justify-around">
          <ScrollLink className="cursor-pointer a" to="home"><Link href="/">HOME</Link></ScrollLink>
          <ScrollLink className="cursor-pointer a" to="about">ABOUT</ScrollLink>
           <ScrollLink className="cursor-pointer a" to="speaker">SPEAKERS</ScrollLink>

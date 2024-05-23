@@ -22,7 +22,7 @@ export default function Navbar() {
             </div>
 
             <div className="w-3/6 flex justify-between items-center">
-                <div className="flex w-4/6 justify-between">
+                <div className="flex w-4/6 justify-around">
                     <Link className="cursor-pointer a" href="/">HOME</Link>
                     <Link className="cursor-pointer a" href="/#about">ABOUT</Link>
                     <Link className="cursor-pointer a" href="/#speaker">SPEAKERS</Link>

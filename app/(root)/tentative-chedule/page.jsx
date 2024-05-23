@@ -156,7 +156,7 @@ export default function TentativeSchedule() {
                 </div>
 
                 <div ref={sunday} className="py-10 pb-[10rem] overflow-hidden" data-scroll data-scroll-speed='0.1'>
-                    <h2 className={`${subTitle.className} uppercase text-6xl`}>Sunday:<br /> Miracles Services</h2>
+                    <h2 className={`${subTitle.className} uppercase text-6xl mb-6`}>Sunday:<br /> Miracles Services</h2>
                     <p>5:00pm-5:30pm (Opening Prayer)</p>
                     <p>5:30pm-6:15pm (Worship with Pastor Eddy James)</p>
                     <p>6:15pm-8:45pm (Prophet Christopher Beleke Preaching, Service, Offering)</p>
