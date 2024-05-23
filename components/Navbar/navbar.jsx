@@ -24,9 +24,9 @@ export default function Nav() {
 
       <div className="w-3/6 flex justify-between items-center">
         <div className="flex w-4/6 justify-between">
-         <ScrollLink className="cursor-pointer a" to="#home"><Link href="/">HOME</Link></ScrollLink>
-         <ScrollLink className="cursor-pointer a" to="#about">ABOUT</ScrollLink>
-          <ScrollLink className="cursor-pointer a" to="#speaker">SPEAKERS</ScrollLink>
+         <ScrollLink className="cursor-pointer a" to="home"><Link href="/">HOME</Link></ScrollLink>
+         <ScrollLink className="cursor-pointer a" to="about">ABOUT</ScrollLink>
+          <ScrollLink className="cursor-pointer a" to="speaker">SPEAKERS</ScrollLink>
           {/* <li className="cursor-pointer a">INFOS</li>
           <li className="cursor-pointer a">FAQS</li> */}
           <Link className="uppercase cursor-pointer a" href="/tentative-chedule">PROGRAM</Link>

@@ -1,6 +1,6 @@
 "use client"
 
-import Nav from "@/components/Navbar/navbar";
+import Navbar from "@/components/Navbar/nav";
 import Footer from "@/components/footer/footer";
 import { useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -114,7 +114,7 @@ export default function TentativeSchedule() {
 
     return (
         <main className="">
-            <Nav />
+            <Navbar />
             <div className="w-4/5 mx-auto pt-[15rem] px-20 text-xl" ref={menuItemRef}>
                 <h1 data-scroll data-scroll-speed='0.8' className={`${title.className} uppercase text-5xl my-20 text-[#d3b975]`}>Tentative Schedule</h1>
                 <p data-scroll data-scroll-speed='0.7' className={`${subTitle.className} uppercase text-3xl mb-2 text-[#d3b975]`}>Nov 29 - Dec 01</p>
