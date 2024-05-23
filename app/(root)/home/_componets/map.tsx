@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Prompt } from "next/font/google";
 import Image from "next/image";
 
+import { CiLocationOn } from "react-icons/ci";
+
 
 const prompt = Prompt({
     subsets: ['latin', 'latin-ext', 'thai', 'vietnamese'],
@@ -28,7 +30,7 @@ export default function Location() {
 
                 </div>
                 <div data-scroll data-scroll-speed='0.6' className="w-1/2 ml-[-14rem] pr-20 text-[1.1rem]">
-                    <h1 className={`${prompt.className} text-6xl mb-10`}>Location</h1>
+                    <h1 className={`${prompt.className} text-6xl mb-10 flex items-center`}>Location <CiLocationOn /></h1>
                     <p className=" mb-10">Join us at the Table Of Eagles, where the Bride of Christ is prepared, the prophetic is released, and the supernatural becomes natural. Together, let us soar to new heights in our walk with the Lord.</p>
                     <h2 className="font-extrabold mb-6">Doubletree by Hilton DFW Airport North</h2>
                     <p className="text-[#d3b975]">4441 W. John Carpenter Freeway, Irving, TX 75063</p>

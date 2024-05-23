@@ -1,6 +1,7 @@
 "use client"
 
 import Nav from "@/components/Navbar/navbar";
+import Footer from "@/components/footer/footer";
 import { useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -163,9 +164,10 @@ export default function TentativeSchedule() {
                     <p>9:45 pm-10:30 pm (Praise/Worship & Closing)</p>
                 </div>
             </div>
-            <div className="box w-1/5 mt-10 flex justify-center mb-[20rem] ml-52">
+            <div className="box w-1/5 mt-10 flex justify-center mb-[10rem] ml-52">
                 <p>REGISTER NOW</p>
             </div>
+            <Footer />
         </main>
     );
 }

@@ -7,6 +7,8 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
+import { PiMicrophoneStageLight } from "react-icons/pi";
+
 const prompt = Prompt({
   subsets: ['latin', 'latin-ext', 'thai', 'vietnamese'],
   weight: '800'
@@ -124,7 +126,7 @@ export default function Speakers() {
 
   return (
     <div className="w-4/6 mx-auto mb-[12rem] pt-20" id="speaker">
-      <h1 className={`${prompt.className} text-6xl mb-10`}>SPEAKERS</h1>
+      <h1 className={`${prompt.className} text-6xl mb-10 flex items-center`}>SPEAKERS <PiMicrophoneStageLight /></h1>
       <div className="border-dashed border-[1px] border-[#9b9a96] overflow-hidden">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="pl-20 pt-20 w-[360vw] h-[100vh] flex justify-between items-center flex-row relative">
