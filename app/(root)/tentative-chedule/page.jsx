@@ -118,7 +118,7 @@ export default function TentativeSchedule() {
                 <h1 data-scroll data-scroll-speed='0.8' className={`${title.className} uppercase text-5xl my-20 text-[#d3b975]`}>Tentative Schedule</h1>
                 <p data-scroll data-scroll-speed='0.7' className={`${subTitle.className} uppercase text-3xl mb-2 text-[#d3b975]`}>Nov 29 - Dec 01</p>
                 <p data-scroll data-scroll-speed='0.6' className={`${subTitle.className} uppercase text-2xl mb-20 w-3/4`}>3 days of the prophetic, of impartation, of the power of God, of size wonders, and miracles, and three days of Salvation you cannot miss.</p>
-                
+
                 <div ref={friday} className="pt-10" data-scroll data-scroll-speed='0.5'>
                     <h2 className={`${subTitle.className} uppercase text-6xl mb-6`}>Friday:</h2>
                     <p>5:00pm-6:00pm (Opening prayer & Worship VO1)</p>
@@ -154,7 +154,7 @@ export default function TentativeSchedule() {
 
                 </div>
 
-                <div ref={sunday} className="py-10 pb-[20rem] overflow-hidden" data-scroll data-scroll-speed='0.1'>
+                <div ref={sunday} className="py-10 pb-[10rem] overflow-hidden" data-scroll data-scroll-speed='0.1'>
                     <h2 className={`${subTitle.className} uppercase text-6xl`}>Sunday:<br /> Miracles Services</h2>
                     <p>5:00pm-5:30pm (Opening Prayer)</p>
                     <p>5:30pm-6:15pm (Worship with Pastor Eddy James)</p>
@@ -162,6 +162,9 @@ export default function TentativeSchedule() {
                     <p>8:45pm-9:45pm (Graduation)</p>
                     <p>9:45 pm-10:30 pm (Praise/Worship & Closing)</p>
                 </div>
+            </div>
+            <div className="box w-1/5 mt-10 flex justify-center mb-[20rem] ml-52">
+                <p>REGISTER NOW</p>
             </div>
         </main>
     );

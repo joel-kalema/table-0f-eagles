@@ -4,12 +4,6 @@ import Link from "next/link";
 import { Link as ScrollLink } from 'next-scroll';
 
 export default function Nav() {
-
-  const links = [
-    {
-      link: "/"
-    }
-  ]
   const [fix, setFix] = useState(false)
 
   function setFixed() {
