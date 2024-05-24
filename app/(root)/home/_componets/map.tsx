@@ -15,8 +15,8 @@ const prompt = Prompt({
 export default function Location() {
     const [isLoading, setLoading] = useState(true);
     return (
-        <div className="my-[20rem]">
-            <div className="flex items-center">
+        <div className="pb-[10rem] lg:my-[20rem] px-6">
+            <div className="flex flex-col md:flex-row lg:items-center">
                 <div className="md:w-4/6 lg:w-4/6 overflow-hidden drop-shadow-xl">
                     <Image src="/mapusa.png" alt="about" loading="lazy" layout="responsive" width={500} height={500} quality={80}
                         className={`
@@ -29,7 +29,7 @@ export default function Location() {
                     />
 
                 </div>
-                <div data-scroll data-scroll-speed='0.6' className="w-1/2 ml-[-14rem] pr-20 text-[1.1rem]">
+                <div data-scroll data-scroll-speed='0.6' className="lg:w-1/2 mt-[-10rem] lg:ml-[-14rem] lg:pr-20 text-[1.1rem]">
                     <h1 className={`${prompt.className} text-6xl mb-10 flex items-center`}>Location <CiLocationOn /></h1>
                     <p className=" mb-10">Join us at the Table Of Eagles, where the Bride of Christ is prepared, the prophetic is released, and the supernatural becomes natural. Together, let us soar to new heights in our walk with the Lord.</p>
                     <h2 className="font-extrabold mb-6">Doubletree by Hilton DFW Airport North</h2>
