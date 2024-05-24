@@ -23,7 +23,7 @@ export default function Nav() {
         <img src="/logo.png" alt="" className="" />
       </div>
 
-      <div className="w-3/6 hidden md:flex justify-between items-center">
+      <div className="w-3/6 hidden lg:flex justify-between items-center">
         <div className="flex w-4/6 justify-around">
           <ScrollLink className="cursor-pointer a" to="home" offset={100} duration={1000}><Link href="/">HOME</Link></ScrollLink>
           <ScrollLink className="cursor-pointer a" to="about" offset={100} duration={1000}>ABOUT</ScrollLink>
@@ -37,7 +37,7 @@ export default function Nav() {
         </Link>
       </div>
 
-      <CiMenuFries className="md:hidden block" />
+      <CiMenuFries className="lg:hidden block" />
     </div>
   );
 }
