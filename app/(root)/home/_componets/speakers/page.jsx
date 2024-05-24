@@ -126,7 +126,7 @@ export default function Speakers() {
 
   return (
     <div className="lg:w-4/6 mx-auto mb-[12rem] pt-20" id="speaker">
-      <h1 className={`${prompt.className} text-4xl ml-10 lg:ml-0  lg:text-6xl mb-10 flex items-center`}>SPEAKERS <PiMicrophoneStageLight /></h1>
+      <h1 className={`${prompt.className} justify-center lg:justify-start text-6xl mb-10 flex items-center`}>SPEAKERS <PiMicrophoneStageLight /></h1>
       <div className="border-dashed hidden lg:block border-[1px] border-[#9b9a96] overflow-hidden">
         <div ref={triggerRef}>
           <div ref={sectionRef} className="pl-20 pt-20 w-[360vw] h-[50vh] lg:h-[100vh] flex justify-between items-center flex-row relative">
