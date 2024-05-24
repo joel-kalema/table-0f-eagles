@@ -16,7 +16,6 @@ body {
 
 .home {
 	width: 100%;
-	height: 200dvh;
 	background-image: linear-gradient(to top, #22211f, #22211fc7), url("/home.jpeg");
 	background-size: cover;
 	background-position: center;
