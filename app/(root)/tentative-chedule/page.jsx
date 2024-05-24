@@ -115,10 +115,10 @@ export default function TentativeSchedule() {
     return (
         <main className="">
             <Navbar />
-            <div className="lg:w-4/5 mx-auto pt-[10rem] lg:pt-[15rem] px-4 lg:px-20 text-xl" ref={menuItemRef}>
-                <h1 data-scroll data-scroll-speed='0.6' className={`${title.className} uppercase text-3xl lg:text-5xl my-10 lg:my-20 text-[#d3b975]`}>Tentative Schedule</h1>
-                <p data-scroll data-scroll-speed='0.5' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-2 text-[#d3b975]`}>Nov 29 - Dec 01</p>
-                <p data-scroll data-scroll-speed='0.4' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-20 lg:w-3/4`}>3 days of the prophetic, of impartation, of the power of God, of size wonders, and miracles, and three days of Salvation you cannot miss.</p>
+            <div className="lg:w-4/5 mx-auto pt-[10rem] lg:pt-[15rem] px-4 lg:px-20 text-xl overflow-hidden" ref={menuItemRef}>
+                <h1 className={`${title.className} uppercase text-3xl lg:text-5xl my-10 lg:my-20 text-[#d3b975]`}>Tentative Schedule</h1>
+                <p className={`${subTitle.className} uppercase text-xl md:text-3xl mb-2 text-[#d3b975]`}>Nov 29 - Dec 01</p>
+                <p className={`${subTitle.className} uppercase text-xl md:text-3xl mb-20 lg:w-3/4`}>3 days of the prophetic, of impartation, of the power of God, of size wonders, and miracles, and three days of Salvation you cannot miss.</p>
 
                 <div ref={friday} className="pt-10 text-sm lg:text-xl" data-scroll data-scroll-speed='0.3'>
                     <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-6`}>Friday:</h2>
@@ -130,7 +130,7 @@ export default function TentativeSchedule() {
                     <p>9:30pm-10:30pm (Consecration & Closing Ap Chris and Tomi Arayomi)</p>
                 </div>
 
-                <div ref={saturday} className="lg:pt-10 text-sm lg:text-xl overflow-hidden" data-scroll data-scroll-speed='0.2'>
+                <div ref={saturday} className="lg:pt-10 text-sm lg:text-xl overflow-hidden">
                     <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-6`}>Saturday:</h2>
 
 
@@ -156,7 +156,7 @@ export default function TentativeSchedule() {
 
                 </div>
 
-                <div ref={sunday} className="py-10 pb-[10rem] text-sm lg:text-xl overflow-hidden" data-scroll data-scroll-speed='0.1'>
+                <div ref={sunday} className="py-10 lg:pb-[10rem] text-sm lg:text-xl overflow-hidden">
                     <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-6`}>Sunday:<br /> Miracles Services</h2>
                     <p>5:00pm-5:30pm (Opening Prayer Pastor Eddy)</p>
                     <p>5:30pm-6:15pm (Worship with Pastor Eddy James)</p>
@@ -165,7 +165,7 @@ export default function TentativeSchedule() {
                     <p>9:45 pm-10:30 pm (Praise/Worship Rachel & Closing)</p>
                 </div>
             </div>
-            <div className="box w-1/5 mt-10 flex justify-center mb-[10rem] ml-52">
+            <div className="box w-2/4 lg:w-1/5 ml-4 mb-10 flex justify-center lg:ml-52">
                 <p>REGISTER NOW</p>
             </div>
             <Footer />

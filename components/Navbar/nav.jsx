@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import Link from "next/link";
+import { CiMenuFries } from "react-icons/ci";
 
 export default function Navbar() {
     const [fix, setFix] = useState(false)
@@ -21,7 +22,7 @@ export default function Navbar() {
                 <img src="/logo.png" alt="" className="" />
             </div>
 
-            <div className="w-3/6 flex justify-between items-center">
+            <div className="w-3/6 hidden lg:flex justify-between items-center">
                 <div className="flex w-4/6 justify-around">
                     <Link className="cursor-pointer a" href="/">HOME</Link>
                     <Link className="cursor-pointer a" href="/#about">ABOUT</Link>
@@ -34,6 +35,8 @@ export default function Navbar() {
                     <p>REGISTER NOW</p>
                 </Link>
             </div>
+
+            <CiMenuFries className="lg:hidden block" />
         </div>
     );
 }
