@@ -23,7 +23,7 @@ export default function VideoPresentation() {
                 duration: 1,
                 scrollTrigger: {
                     trigger: video.current,
-                    start: "top center",
+                    start: "top top+=500px",
                     end: "bottom bottom",
                     scrub: true,
                 }
@@ -33,8 +33,8 @@ export default function VideoPresentation() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: details.current,
-                start: "top center",
-                end: "bottom bottom",
+                start: "top center+=100px",
+                end: "bottom bottom-=100px",
                 scrub: true,
             }
         });
