@@ -47,7 +47,7 @@ export default function TextAbout() {
                     <li>A Strong Understanding of the Apostolic end time mandate of the Church in the Nations (Spiritually & in Marketplace)</li>
                     <li>Equiping & Demonstrating the Supernatural Power of God</li>
                 </ul>
-                <div className="box w-2/6 mt-10 flex justify-center">
+                <div className="box w-3/6 md:w-2/6 text-sm md:text-xl mt-10 flex justify-center">
                     <p>REGISTER NOW</p>
                 </div>
             </div>
