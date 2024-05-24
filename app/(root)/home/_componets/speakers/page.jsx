@@ -156,9 +156,9 @@ export default function Speakers() {
 
 
       <div className="lg:hidden border-dashed w-[95%] mx-auto md:w-5/6 px-4">
-        <div  className="flex justify-between items-center flex-wrap">
+        <div  className="flex justify-center items-center flex-wrap">
           {speakers.map((item, index) => (
-            <div key={index} className={item.name == "Christopher Beleke Tabu" ? "w-6/6 mb-4 p-2" : "w-3/6 p-2 mt-2"}>
+            <div key={index} className={item.name == "Christopher Beleke Tabu" ? "w-6/6 mb-4" : "w-3/6 p-2 mt-2"}>
               <div className="w-5/5 relative z-20">
                 <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
                   className={`

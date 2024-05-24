@@ -68,13 +68,13 @@ export default function VideoPresentation() {
             </div>
 
             <div className='flex lg:hidden flex-col items-center overflow-hidden lg:flex-row px-6 md:px-20 lg:px-32 justify-around pb-28'>
-                <div className='w-4/5 lg:w-4/12 lg:ml-12 overflow-hidden lg:px-12 mx-auto mb-10 lg:mb-0'>
+                <div className='w-4/5 md:w-4/6 lg:w-4/12 lg:ml-12 overflow-hidden lg:px-12 mx-auto mb-10 lg:mb-0'>
                     <video className="h-full w-full rounded-lg" controls>
                         <source src="/event.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div className={`${time.className} lg:w-4/6 md:text-center text-sm md:text-3xl overflow-hidden`}>
+                <div className={`${time.className} lg:w-4/6 md:text-center text-sm md:text-xl lg:text-3xl overflow-hidden`}>
                     <div className="w-[6rem] h-[3px] bg-[#d3b975] mb-10 uppercase"></div>
                     <p className="uppercase">The Table Of Eagles is a place where the prophetic anointing flows freely.</p>
                     <p className="uppercase">Through powerful messages and fervent intercession, we seek to instruct,</p>
