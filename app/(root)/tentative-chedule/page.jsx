@@ -121,7 +121,7 @@ export default function TentativeSchedule() {
                 <p data-scroll data-scroll-speed='0.4' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-20 lg:w-3/4`}>3 days of the prophetic, of impartation, of the power of God, of size wonders, and miracles, and three days of Salvation you cannot miss.</p>
 
                 <div ref={friday} className="pt-10 text-sm lg:text-xl" data-scroll data-scroll-speed='0.3'>
-                    <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-6`}>Friday:</h2>
+                    <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-4`}>Friday:</h2>
                     <p>5:00pm-5:15 Prayer</p>
                     <p>5:15-6:00pm Worship VO1</p>
                     <p>6:00pm-7:30pm (Apostle Enmith)</p>
@@ -131,7 +131,7 @@ export default function TentativeSchedule() {
                 </div>
 
                 <div ref={saturday} className="lg:pt-10 text-sm lg:text-xl overflow-hidden" data-scroll data-scroll-speed='0.2'>
-                    <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-6`}>Saturday:</h2>
+                    <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-4`}>Saturday:</h2>
 
 
                     <h3 className="flex items-center text-[#d3b975] mb-4 text-xl lg:text-2xl"><CiPaperplane /> Morning Glory</h3>
@@ -157,7 +157,7 @@ export default function TentativeSchedule() {
                 </div>
 
                 <div ref={sunday} className="py-10 lg:pb-[10rem] text-sm lg:text-xl overflow-hidden" data-scroll data-scroll-speed='0.1'>
-                    <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-6`}>Sunday:<br /> Miracles Services</h2>
+                    <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-4`}>Sunday:<br /> Miracles Services</h2>
                     <p>5:00pm-5:30pm (Opening Prayer Pastor Eddy)</p>
                     <p>5:30pm-6:15pm (Worship with Pastor Eddy James)</p>
                     <p>6:15pm-8:45pm (Prophet Christopher Beleke Preaching, Service, Offering)</p>
