@@ -133,7 +133,7 @@ export default function Speakers() {
             {speakers.map((item, index) => (
               <div ref={(el) => (elements.current[index] = el)} key={index} className="w-1/6">
                 <div className="w-3/5 relative z-20">
-                  <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
+                  <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={50}
                     className={`
                       duration-200 ease-in-out group-hover:opacity-75
                       ${isLoading
@@ -160,7 +160,7 @@ export default function Speakers() {
           {speakers.map((item, index) => (
             <div key={index} className={item.name == "Christopher Beleke Tabu" ? "w-6/6 mb-4" : "w-3/6 p-2 mt-2"}>
               <div className="w-5/5 relative z-20">
-                <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
+                <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={50}
                   className={`
                       duration-200 ease-in-out group-hover:opacity-75
                       ${isLoading
