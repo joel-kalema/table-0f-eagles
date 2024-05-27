@@ -115,8 +115,8 @@ export default function TentativeSchedule() {
     return (
         <main className="">
             <Navbar />
-            <div className="lg:w-4/5 mx-auto pt-[10rem] lg:pt-[15rem] px-4 lg:px-20 text-xl overflow-hidden" ref={menuItemRef}>
-                <h1 data-scroll data-scroll-speed='0.6' className={`${title.className} uppercase text-3xl lg:text-5xl my-10 lg:my-20 text-[#d3b975]`}>Tentative Schedule</h1>
+            <div className="lg:w-4/5 mx-auto pt-[10rem] lg:pt-[15rem] px-4 lg:px-20 text-xl" ref={menuItemRef}>
+                <h1 data-scroll data-scroll-speed='0.6' className={`${title.className} uppercase text-3xl lg:text-5xl my-6 lg:my-20 text-[#d3b975]`}>Tentative Schedule</h1>
                 <p data-scroll data-scroll-speed='0.5' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-2 text-[#d3b975]`}>Nov 29 - Dec 01</p>
                 <p data-scroll data-scroll-speed='0.4' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-20 lg:w-3/4`}>3 days of the prophetic, of impartation, of the power of God, of size wonders, and miracles, and three days of Salvation you cannot miss.</p>
 
