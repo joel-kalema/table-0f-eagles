@@ -125,15 +125,15 @@ export default function Speakers() {
   }, []);
 
   return (
-    <div className="w-4/6 mx-auto mb-[12rem] pt-20" id="speaker">
-      <h1 className={`${prompt.className} text-6xl mb-10 flex items-center`}>SPEAKERS <PiMicrophoneStageLight /></h1>
-      <div className="border-dashed border-[1px] border-[#9b9a96] overflow-hidden">
+    <div className="lg:w-4/6 mx-auto mb-20 lg:mb-[12rem] pt-20" id="speaker">
+      <h1 className={`${prompt.className} justify-center lg:justify-start text-4xl lg:text-6xl mb-10 flex items-center`}>SPEAKERS <PiMicrophoneStageLight /></h1>
+      <div className="border-dashed hidden lg:block border-[1px] border-[#9b9a96] overflow-hidden">
         <div ref={triggerRef}>
-          <div ref={sectionRef} className="pl-20 pt-20 w-[360vw] h-[100vh] flex justify-between items-center flex-row relative">
+          <div ref={sectionRef} className="pl-20 pt-20 w-[360vw] h-[50vh] lg:h-[100vh] flex justify-between items-center flex-row relative">
             {speakers.map((item, index) => (
               <div ref={(el) => (elements.current[index] = el)} key={index} className="w-1/6">
                 <div className="w-3/5 relative z-20">
-                  <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
+                  <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={50}
                     className={`
                       duration-200 ease-in-out group-hover:opacity-75
                       ${isLoading
@@ -153,6 +153,33 @@ export default function Speakers() {
           </div>
         </div>
       </div>
+
+
+      <div className="lg:hidden border-dashed w-[95%] mx-auto md:w-5/6 px-4">
+        <div  className="flex justify-center items-center flex-wrap">
+          {speakers.map((item, index) => (
+            <div key={index} className={item.name == "Christopher Beleke Tabu" ? "w-6/6 mb-4" : "w-3/6 p-2 mt-2"}>
+              <div className="w-5/5 relative z-20">
+                <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={50}
+                  className={`
+                      duration-200 ease-in-out group-hover:opacity-75
+                      ${isLoading
+                      ? "scale-110 blur-2xl grayscale"
+                      : "scale-100 blur-0 grayscale-0"
+                    }`}
+                  onLoadingComplete={() => setLoading(false)}
+                />
+              </div>
+              <div  className="mt-4">
+                <h2 className="text-sm font-extrabold">{item.title}</h2>
+                <p className={`${subTitle.className} text-xl uppercase text-[#d3b975]`}>{item.name}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
     </div>
   );
 }

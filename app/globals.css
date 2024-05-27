@@ -16,7 +16,6 @@ body {
 
 .home {
 	width: 100%;
-	height: 200dvh;
 	background-image: linear-gradient(to top, #22211f, #22211fc7), url("/home.jpeg");
 	background-size: cover;
 	background-position: center;
@@ -56,13 +55,12 @@ p {
 
 .box {
 	border: 0.1rem solid;
-	padding: 1.08vw;
+	padding: 1.2rem;
 	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
-	transition: 1s ease all;
 }
 
 .box:hover {
