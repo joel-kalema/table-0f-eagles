@@ -30,7 +30,7 @@ export default function Nav() {
           <ScrollLink className="cursor-pointer a" to="speaker" offset={100} duration={1000}>SPEAKERS</ScrollLink>
           {/* <li className="cursor-pointer a">INFOS</li>
           <li className="cursor-pointer a">FAQS</li> */}
-          <Link className="uppercase cursor-pointer a" href="/tentative-chedule">PROGRAM</Link>
+          <Link className="uppercase cursor-pointer a" href="/program">PROGRAM</Link>
         </div>
         <Link href="" className="box">
           <p>REGISTER NOW</p>

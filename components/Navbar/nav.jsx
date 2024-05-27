@@ -29,7 +29,7 @@ export default function Navbar() {
                     <Link className="cursor-pointer a" href="/#speaker">SPEAKERS</Link>
                     {/* <li className="cursor-pointer a">INFOS</li>
           <li className="cursor-pointer a">FAQS</li> */}
-                    <Link className="uppercase cursor-pointer a" href="/tentative-chedule">PROGRAM</Link>
+                    <Link className="uppercase cursor-pointer a" href="/program">PROGRAM</Link>
                 </div>
                 <Link href="" className="box">
                     <p>REGISTER NOW</p>
