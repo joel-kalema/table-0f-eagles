@@ -16,8 +16,8 @@ export default function Navbar() {
 
     return (
         <div className={
-            fix ? "py-4 px-20 flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-[#22211f] duration-500 ease-in-out"
-                : "py-4 px-20 flex justify-between items-center fixed top-0 left-0 w-full z-50 duration-500 ease-in-out"}>
+            fix ? "py-4 px-6 lg:px-20 flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-[#22211f] duration-500 ease-in-out"
+                : "py-4 px-6 lg:px-20 flex justify-between items-center fixed top-0 left-0 w-full z-50 duration-500 ease-in-out"}>
             <div className={fix ? "w-[5rem] duration-500 ease-in-out" : "w-1/6 duration-500 ease-in-out"}>
                 <img src="/logo.png" alt="" className="" />
             </div>

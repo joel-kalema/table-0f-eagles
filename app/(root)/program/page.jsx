@@ -57,8 +57,8 @@ export default function TentativeSchedule() {
         const scrool1 = gsap.timeline({
             scrollTrigger: {
                 trigger: saturday.current,
-                start: "top center+=100px",
-                end: "bottom bottom-=100px",
+                start: "top center",
+                end: "bottom bottom",
                 scrub: true,
             }
         });
@@ -76,8 +76,8 @@ export default function TentativeSchedule() {
         const scrool2 = gsap.timeline({
             scrollTrigger: {
                 trigger: sunday.current,
-                start: "top center+=100px",
-                end: "bottom bottom",
+                start: "top-=200px center",
+                end: "bottom bottom-=200px",
                 scrub: true,
             }
         });
