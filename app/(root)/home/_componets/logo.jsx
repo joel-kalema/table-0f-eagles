@@ -29,8 +29,8 @@ export default function People() {
 
             </div>
             <p className={`${time.className} w-5/6 text-sm md:text-xl lg:w-4/6 text-center uppercase mb-10`}>We believe in the apostolic end-time mandate of the Church. At our conference, we delve into the spiritual and marketplace realms, equipping believers to fulfill their divine purpose. Armed with a strong understanding of this mandate, we march forward, impacting nations with the love and power of God.</p>
-            <Link href="" className="box">
-                <p>REGISTER NOW</p>
+            <Link href="https://www.eventbrite.com/e/the-table-of-eagles-tickets-885272783727" target="_blank" className="box">
+                REGISTER NOW
             </Link>
         </div>
     );
