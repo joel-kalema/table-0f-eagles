@@ -15,6 +15,7 @@ export default function People() {
     const [isLoading, setLoading] = useState(true);
     return (
         <div className="logo flex justify-center items-center flex-col">
+            <div className="xl:w-[70%] mx-auto"></div>
             <div className="w-2/4 lg:w-1/4 overflow-hidden mb-10">
                 <Image src="/logo.png" alt="about" loading="lazy" layout="responsive" width={500} height={500} quality={80}
                     className={`
