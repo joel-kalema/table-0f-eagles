@@ -53,7 +53,7 @@ const speakers = [
   {
     name: "Rachel Anyeme",
     url: "/RachelAnyeme.jpeg",
-    title: "Apostle"
+    title: "Min."
   }
 ];
 
