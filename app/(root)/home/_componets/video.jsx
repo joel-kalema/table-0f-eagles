@@ -51,9 +51,9 @@ export default function VideoPresentation() {
     }, []);
 
     return (
-        <div className="overflow-hidden pt-20">
+        <div className="overflow-hidden pt-20 xl:w-[75%] mx-auto xl:py-[20rem]">
             <div ref={video} className='hidden lg:flex flex-col items-center overflow-hidden lg:flex-row px-6 md:px-20 lg:px-32 justify-around pb-28'>
-                <div ref={details} className='w-4/5 lg:w-4/12 lg:ml-12 overflow-hidden lg:px-12 mx-auto mb-10 lg:mb-0'>
+                <div ref={details} className='w-4/5 lg:w-4/12 xl:w-6/12 lg:ml-12 overflow-hidden lg:px-12 mx-auto mb-10 lg:mb-0'>
                     <video className="h-full w-full rounded-lg" controls>
                         <source src="/event.mp4" type="video/mp4" />
                         Your browser does not support the video tag.

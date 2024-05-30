@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState, useRef, createRef } from "react";
 import { Prompt, Syncopate } from "next/font/google";
@@ -133,7 +133,7 @@ export default function Speakers() {
             {speakers.map((item, index) => (
               <div ref={(el) => (elements.current[index] = el)} key={index} className="w-1/6">
                 <div className="w-3/5 relative z-20">
-                  <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={50}
+                  <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
                     className={`
                       duration-200 ease-in-out group-hover:opacity-75
                       ${isLoading
@@ -159,8 +159,8 @@ export default function Speakers() {
         <div  className="flex justify-center items-center flex-wrap">
           {speakers.map((item, index) => (
             <div key={index} className={item.name == "Christopher Beleke Tabu" ? "w-6/6 mb-4" : "w-3/6 p-2 mt-2"}>
-              <div className="w-5/5 relative z-20">
-                <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={50}
+              <div className="w-5/5 relative z-20 rounded-full overflow-hidden">
+                <Image src={item.url} alt={item.name} loading="lazy" layout="responsive" width={500} height={500} quality={80}
                   className={`
                       duration-200 ease-in-out group-hover:opacity-75
                       ${isLoading
@@ -170,7 +170,7 @@ export default function Speakers() {
                   onLoadingComplete={() => setLoading(false)}
                 />
               </div>
-              <div  className="mt-4">
+              <div  className="mt-4 text-center">
                 <h2 className="text-sm font-extrabold">{item.title}</h2>
                 <p className={`${subTitle.className} text-xl uppercase text-[#d3b975]`}>{item.name}</p>
               </div>

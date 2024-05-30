@@ -32,8 +32,8 @@ export default function Nav() {
           <li className="cursor-pointer a">FAQS</li> */}
           <Link className="uppercase cursor-pointer a" href="/program">PROGRAM</Link>
         </div>
-        <Link href="" className="box">
-          <p>REGISTER NOW</p>
+        <Link href="https://www.eventbrite.com/e/the-table-of-eagles-tickets-885272783727" target="_blank" className="box">
+          REGISTER NOW
         </Link>
       </div>
 
