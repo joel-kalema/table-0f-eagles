@@ -120,7 +120,7 @@ export default function TentativeSchedule() {
                 <p data-scroll data-scroll-speed='0.5' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-2 text-[#d3b975]`}>Nov 29 - Dec 01</p>
                 <p data-scroll data-scroll-speed='0.4' className={`${subTitle.className} uppercase text-xl md:text-3xl mb-20 lg:w-3/4`}>3 days of the prophetic, of impartation, of the power of God, of size wonders, and miracles, and three days of Salvation you cannot miss.</p>
 
-                <div ref={friday} className="pt-10 text-sm md:text-xl overflow-hidden" data-scroll data-scroll-speed='0.3'>
+                <div ref={friday} className="pt-10 mb-6 lg:mb-0 text-sm md:text-xl overflow-hidden" data-scroll data-scroll-speed='0.3'>
                     <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-4`}>Friday:</h2>
                     <p>5:00pm-5:15 Prayer</p>
                     <p>5:15-6:00pm Worship VO1</p>

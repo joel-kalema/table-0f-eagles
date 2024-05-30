@@ -41,7 +41,7 @@ const speakers = [
     title: "Apostle"
   },
   {
-    name: "Randolph Adjei",
+    name: " Tomi Arayomi",
     url: "/TomiArayomi.jpeg",
     title: "Apostle"
   },
@@ -53,7 +53,7 @@ const speakers = [
   {
     name: "Rachel Anyeme",
     url: "/RachelAnyeme.jpeg",
-    title: "Apostle"
+    title: "Min."
   }
 ];
 

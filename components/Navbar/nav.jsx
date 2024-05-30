@@ -1,18 +1,36 @@
 "use client"
-import { useState } from "react";
+
+import { useState, useEffect } from 'react';
 import Link from "next/link";
-import { CiMenuFries } from "react-icons/ci";
+import { CiMenuFries } from 'react-icons/ci';
+import { AiOutlineClose } from 'react-icons/ai';
+import { Syncopate } from 'next/font/google';
+
+const time = Syncopate({
+  subsets: ['latin'],
+  weight: '400'
+});
 
 export default function Navbar() {
-    const [fix, setFix] = useState(false)
+    const [fix, setFix] = useState(false);
+  const [active, setActive] = useState('nav_close');
 
-    function setFixed() {
-        window.scrollY >= 10 ? setFix(true) : setFix(false)
-    }
+  const navToggle = () => {
+    setActive(active === 'nav_active' ? 'nav_close' : 'nav_active');
+  };
 
-    if (typeof window !== "undefined") {
-        window.addEventListener("scroll", setFixed);
+  const setFixed = () => {
+    window.scrollY >= 10 ? setFix(true) : setFix(false);
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', setFixed);
+      return () => {
+        window.removeEventListener('scroll', setFixed);
+      };
     }
+  }, []);
 
     return (
         <div className={
@@ -27,8 +45,6 @@ export default function Navbar() {
                     <Link className="cursor-pointer a" href="/">HOME</Link>
                     <Link className="cursor-pointer a" href="/#about">ABOUT</Link>
                     <Link className="cursor-pointer a" href="/#speaker">SPEAKERS</Link>
-                    {/* <li className="cursor-pointer a">INFOS</li>
-          <li className="cursor-pointer a">FAQS</li> */}
                     <Link className="uppercase cursor-pointer a" href="/program">PROGRAM</Link>
                 </div>
                 <Link href="https://www.eventbrite.com/e/the-table-of-eagles-tickets-885272783727" target="_blank" className="box">
@@ -36,7 +52,18 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <CiMenuFries className="lg:hidden block" />
+            <CiMenuFries onClick={navToggle} className="lg:hidden block" />
+
+            <div className={`${active} h-[100vh] flex justify-center items-center w-6/6 backdrop-blur-xl bg-[#22211f]`}>
+                <AiOutlineClose className="absolute top-4 right-4 text-xl" onClick={navToggle} />
+                <div className={`${time.className} flex text-3xl flex-col text-white`}>
+                    <div onClick={navToggle}><Link className="uppercase cursor-pointer a mb-20" href="/">
+                    <span className='text-xs text-[#d3b975]'>Go to the</span><br />HOME PAGE</Link></div>
+                    <Link onClick={navToggle} href="https://www.eventbrite.com/e/the-table-of-eagles-tickets-885272783727" target="_blank" className="box text-xl">
+                        REGISTER NOW
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 }
