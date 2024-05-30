@@ -59,7 +59,7 @@ const Timer = () => {
   return (
     <div className="md:text-center m-auto md:mt-0 mt-4">
       {/* <h2 className="mt-6 text-3xl">{timer}</h2> */}
-      <h2 data-scroll data-scroll-speed='0.3' className={`${time.className} text-sm md:text-3xl overflow-hidden`}><span>{timer[0]}</span><span>{timer[1]}</span><span>{timer[2]}</span> <span className="text-sm">days</span>, 
+      <h2 className={`${time.className} text-sm md:text-3xl overflow-hidden`}><span>{timer[0]}</span><span>{timer[1]}</span><span>{timer[2]}</span> <span className="text-sm">days</span>, 
         <span> {timer[4]}</span><span>{timer[5]}</span> <span className="text-sm font-semibold">hours</span>, <span>{timer[7]}</span><span>{timer[8]}</span> <span className="text-sm">min</span>, <span>{timer[10]}</span><span>{timer[11]}</span> <span className="text-sm">sec</span>
       </h2>
       {/* <button onClick={onClickReset}>Reset</button> */}
