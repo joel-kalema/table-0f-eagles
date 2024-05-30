@@ -22,6 +22,30 @@ body {
 	background-repeat: no-repeat;
 }
 
+.nav_active {
+    height: 100dvh;
+   
+    left: 0;
+    top: 0;
+    position: fixed;
+    transition: width ease .4s;
+    width: 100%;
+    z-index: 100;
+    
+    overflow: hidden;
+}
+
+.nav_close {
+  height: 100dvh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  transition: width ease .2s;
+  width: 0%;
+  z-index: 100;
+  overflow: hidden;
+}
+
 @property --angle {
 	syntax: '<angle>';
 	initial-value: 90deg;
