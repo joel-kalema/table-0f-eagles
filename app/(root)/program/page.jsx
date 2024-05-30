@@ -130,7 +130,7 @@ export default function TentativeSchedule() {
                     <p>9:30pm-10:30pm (Consecration & Closing Ap Chris and Tomi Arayomi)</p>
                 </div>
 
-                <div ref={saturday} className="lg:pt-10 text-sm md:text-xl overflow-hidden">
+                <div ref={saturday} className="lg:pt-10 mb-6 lg:mb-0 text-sm md:text-xl overflow-hidden">
                     <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-4`}>Saturday:</h2>
 
 
