@@ -136,15 +136,15 @@ export default function TentativeSchedule() {
 
                     <h3 className="flex items-center text-[#d3b975] mb-4 text-xl lg:text-2xl"><CiPaperplane /> Morning Glory</h3>
                     <p>9:00am-10:00am (Intercession/ worship team ready)</p>
-                    <p>10:00am-10:50am (Apostol Christopher-may prophesy)</p>
-                    <p>10:50 am-11:00 am (Offering & Closing)</p>
+                    <p>10:00am-10:50am (Prophetic Service)</p>
+                    <p>10:50 am-11:00 am (Closing)</p>
 
 
 
                     <h3 className="flex items-center text-[#d3b975] mb-4 text-xl lg:text-2xl mt-10"><CiPaperplane />Second Service</h3>
-                    <p>3:00 pm-3:40 pm (Rachel)</p>
+                    <p>3:00 pm-3:40 pm (Min Rachel)</p>
                     <p>3:40 pm-4:45 pm (Pastor Kofi Dartey)</p>
-                    <p>4:45pm-4:55pm (Offering & Closing)</p>
+                    <p>4:45pm-4:55pm (Closing)</p>
 
 
 
@@ -152,7 +152,7 @@ export default function TentativeSchedule() {
                     <p>7:00pm-7:30pm (Opening Prayer Pastor Beni)</p>
                     <p>7:30pm-8:15pm (Worship with Pastor Eddy James)</p>
                     <p>8:15pm-9:45pm (Apostle Randolph Adjei)</p>
-                    <p>10:00pm-10:30pm (Calling, Offering, & Closing)</p>
+                    <p>10:00pm-10:30pm (Calling, & Closing)</p>
 
                 </div>
 
@@ -160,7 +160,7 @@ export default function TentativeSchedule() {
                     <h2 className={`${subTitle.className} uppercase text-3xl lg:text-6xl mb-4`}>Sunday:<br /> Miracles Services</h2>
                     <p>5:00pm-5:30pm (Opening Prayer Pastor Eddy)</p>
                     <p>5:30pm-6:15pm (Worship with Pastor Eddy James)</p>
-                    <p>6:15pm-8:45pm (Prophet Christopher Beleke Preaching, Service, Offering)</p>
+                    <p>6:15pm-8:45pm (Prophet Christopher Beleke Preaching, Service)</p>
                     <p>8:45pm-9:45pm (Graduation)</p>
                     <p>9:45 pm-10:30 pm (Praise/Worship Rachel & Closing)</p>
                 </div>

@@ -33,12 +33,12 @@ const speakers = [
   {
     name: "Eddie James",
     url: "/speaker01.jpeg",
-    title: "Apostle"
+    title: "Pastor"
   },
   {
     name: "Kofi Dartey",
     url: "/speaker02prime.jpeg",
-    title: "Apostle"
+    title: "Pastor"
   },
   {
     name: " Tomi Arayomi",
